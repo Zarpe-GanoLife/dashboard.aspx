@@ -21,21 +21,21 @@
 <asp:UpdatePanel ID="UpdatePanelDashboardTitle" runat="server">
 <ContentTemplate>
 
-       <div class="fila-ajustable" >
-
-              <div class="columna_ancho12" > 
+       <div class="fila-ajustable" style="margin-top:20px;" >
+              <div class="columna_ancho9" > 
               <h2><asp:Label ID="lblPageTitle" runat="server" Text="Bienvenido al Sistema de Gestión Empresarial: Ganolife 365" meta:resourcekey="lblPageTitleResource1" >
-              </asp:Label><asp:Label ID="Label21" runat="server" Text="" Width="150px"></asp:Label>
-               <asp:Button ID="btnReportsManagement" runat="server" 
-                      Text="Ver Dashboard Gerencial" TabIndex="17" 
-                        CssClass="boton_basico boton_blanco" 
-                      onclick="btnReportsManagement_Click" />
+              </asp:Label>
+              <%--<asp:Label ID="Label21" runat="server" Text="" Width="150px"></asp:Label>--%>
               </h2>
-               
-              <hr>
-              </div>
-
+               </div>
+              <div class="columna_ancho3"  >
+               <asp:Button ID="btnReportsManagement" runat="server" Text="Ver Dashboard Gerencial" TabIndex="17" 
+                        CssClass="boton_basico boton_blanco" onclick="btnReportsManagement_Click" />
+              </div> 
         </div>
+
+        <div class="fila-ajustable"><hr ></div> 
+
 
 </ContentTemplate>
 </asp:UpdatePanel>
